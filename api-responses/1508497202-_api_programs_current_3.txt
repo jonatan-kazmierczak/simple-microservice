@@ -1,0 +1,75 @@
+START 1508497333.771567447
+[{"command":null,"currentStage":null,"elapsed":1,"id":3,"name":"niv_Dos_CWW_60HZ","remaining":0,"signature":1535303334,"stages":["Spuelen","Therm Desinfection","Trocknen","Vorspuelen","Reinigen"],"status":"READY"}]
+END   1508497333.822840936
+
+START 1508497334.830183089
+[{"command":null,"currentStage":null,"elapsed":1,"id":3,"name":"niv_Dos_CWW_60HZ","remaining":0,"signature":1535303334,"stages":["Spuelen","Therm Desinfection","Trocknen","Vorspuelen","Reinigen"],"status":"READY"}]
+END   1508497334.890724264
+
+START 1508497335.897798804
+[{"command":null,"currentStage":0,"elapsed":0,"id":3,"name":"niv_Dos_CWW_60HZ","remaining":8,"signature":1535303334,"stages":["Spuelen","Therm Desinfection","Trocknen","Vorspuelen","Reinigen"],"status":"RUNNING"}]
+END   1508497335.958915970
+
+START 1508497336.965921471
+[{"command":null,"currentStage":0,"elapsed":1,"id":3,"name":"niv_Dos_CWW_60HZ","remaining":7,"signature":1535303334,"stages":["Spuelen","Therm Desinfection","Trocknen","Vorspuelen","Reinigen"],"status":"RUNNING"}]
+END   1508497337.016381429
+
+START 1508497338.022151757
+[{"command":null,"currentStage":0,"elapsed":2,"id":3,"name":"niv_Dos_CWW_60HZ","remaining":6,"signature":1535303334,"stages":["Spuelen","Therm Desinfection","Trocknen","Vorspuelen","Reinigen"],"status":"RUNNING"}]
+END   1508497338.070409250
+
+START 1508497339.079388587
+[{"command":null,"currentStage":0,"elapsed":3,"id":3,"name":"niv_Dos_CWW_60HZ","remaining":5,"signature":1535303334,"stages":["Spuelen","Therm Desinfection","Trocknen","Vorspuelen","Reinigen"],"status":"RUNNING"}]
+END   1508497339.126547228
+
+START 1508497340.133351885
+[{"command":null,"currentStage":0,"elapsed":4,"id":3,"name":"niv_Dos_CWW_60HZ","remaining":4,"signature":1535303334,"stages":["Spuelen","Therm Desinfection","Trocknen","Vorspuelen","Reinigen"],"status":"RUNNING"}]
+END   1508497340.283350222
+
+START 1508497341.290283464
+[{"command":null,"currentStage":0,"elapsed":6,"id":3,"name":"niv_Dos_CWW_60HZ","remaining":2,"signature":1535303334,"stages":["Spuelen","Therm Desinfection","Trocknen","Vorspuelen","Reinigen"],"status":"RUNNING"}]
+END   1508497341.362278519
+
+START 1508497342.366404602
+[{"command":null,"currentStage":0,"elapsed":7,"id":3,"name":"niv_Dos_CWW_60HZ","remaining":1,"signature":1535303334,"stages":["Spuelen","Therm Desinfection","Trocknen","Vorspuelen","Reinigen"],"status":"RUNNING"}]
+END   1508497342.408962678
+
+START 1508497343.412504961
+[{"command":null,"currentStage":0,"elapsed":8,"id":3,"name":"niv_Dos_CWW_60HZ","remaining":0,"signature":1535303334,"stages":["Spuelen","Therm Desinfection","Trocknen","Vorspuelen","Reinigen"],"status":"RUNNING"}]
+END   1508497343.442219427
+
+START 1508497344.447983475
+[{"command":null,"currentStage":0,"elapsed":8,"id":3,"name":"niv_Dos_CWW_60HZ","remaining":0,"signature":1535303334,"stages":["Spuelen","Therm Desinfection","Trocknen","Vorspuelen","Reinigen"],"status":"CANCELLING"}]
+END   1508497344.500078916
+
+START 1508497345.505834906
+[{"command":null,"currentStage":null,"elapsed":8,"id":3,"name":"niv_Dos_CWW_60HZ","remaining":0,"signature":1535303334,"stages":["Spuelen","Therm Desinfection","Trocknen","Vorspuelen","Reinigen"],"status":"CANCELLING"}]
+END   1508497345.547452490
+
+START 1508497346.552917054
+[{"command":null,"currentStage":null,"elapsed":8,"id":3,"name":"niv_Dos_CWW_60HZ","remaining":0,"signature":1535303334,"stages":["Spuelen","Therm Desinfection","Trocknen","Vorspuelen","Reinigen"],"status":"CANCELLING"}]
+END   1508497346.626263114
+
+START 1508497347.633734355
+[{"command":null,"currentStage":null,"elapsed":8,"id":3,"name":"niv_Dos_CWW_60HZ","remaining":0,"signature":1535303334,"stages":["Spuelen","Therm Desinfection","Trocknen","Vorspuelen","Reinigen"],"status":"CANCELLING"}]
+END   1508497347.790309247
+
+START 1508497348.797253467
+[{"command":null,"currentStage":null,"elapsed":8,"id":3,"name":"niv_Dos_CWW_60HZ","remaining":0,"signature":1535303334,"stages":["Spuelen","Therm Desinfection","Trocknen","Vorspuelen","Reinigen"],"status":"CANCELLING"}]
+END   1508497348.878413260
+
+START 1508497349.885687228
+[{"command":null,"currentStage":null,"elapsed":8,"id":3,"name":"niv_Dos_CWW_60HZ","remaining":0,"signature":1535303334,"stages":["Spuelen","Therm Desinfection","Trocknen","Vorspuelen","Reinigen"],"status":"CANCELLING"}]
+END   1508497349.932431778
+
+START 1508497350.938337417
+[{"command":null,"currentStage":null,"elapsed":8,"id":3,"name":"niv_Dos_CWW_60HZ","remaining":0,"signature":1535303334,"stages":["Spuelen","Therm Desinfection","Trocknen","Vorspuelen","Reinigen"],"status":"CANCELLING"}]
+END   1508497350.983429420
+
+START 1508497351.990089022
+[{"command":null,"currentStage":null,"elapsed":8,"id":3,"name":"niv_Dos_CWW_60HZ","remaining":0,"signature":1535303334,"stages":["Spuelen","Therm Desinfection","Trocknen","Vorspuelen","Reinigen"],"status":"READY"}]
+END   1508497352.035718048
+
+START 1508497353.042636574
+[{"command":null,"currentStage":null,"elapsed":8,"id":3,"name":"niv_Dos_CWW_60HZ","remaining":0,"signature":1535303334,"stages":["Spuelen","Therm Desinfection","Trocknen","Vorspuelen","Reinigen"],"status":"READY"}]
+END   1508497353.080315355

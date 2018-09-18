@@ -1,0 +1,4 @@
+START 1508511755.689615195
+[{"firmwareVersion":"0.29.4","lastBatchId":$BATCH_ID,"lastBatchNo":$BATCH_ID,"lastParameterChange":"2017-10-20T14:48:42","lastService":null,"machinetype":"WD290","nextHepaFilterExchange":"2018-01-01","nextService":"2018-01-01","operatingHours":265,"serialNumber":"00000000","supportPhoneNumber":"0000 000 000 00 00"}]
+END   1508511756.144679244
+

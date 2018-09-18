@@ -1,0 +1,4 @@
+START 1508511755.709988070
+[{"occurrence":63,"profileId":10},{"occurrence":15,"profileId":14},{"occurrence":9,"profileId":13},{"occurrence":8,"profileId":5},{"occurrence":5,"profileId":1}]
+END   1508511758.031322273
+

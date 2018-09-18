@@ -1,0 +1,27 @@
+START 1508497318.923209686
+[{"command":null,"currentStage":null,"elapsed":1,"id":4,"name":"OP_kurz_v22b","remaining":0,"signature":1535303334,"stages":["Spuelen","Therm Desinfection","Trocknen","Vorspuelen","Reinigen"],"status":"READY"}]
+END   1508497318.973609028
+
+START 1508497319.978706303
+[{"command":null,"currentStage":null,"elapsed":1,"id":4,"name":"OP_kurz_v22b","remaining":0,"signature":1535303334,"stages":["Spuelen","Therm Desinfection","Trocknen","Vorspuelen","Reinigen"],"status":"READY"}]
+END   1508497320.146464667
+
+START 1508497321.153757757
+[{"command":null,"currentStage":null,"elapsed":0,"id":4,"name":"OP_kurz_v22b","remaining":2073,"signature":1535303334,"stages":["Spuelen","Therm Desinfection","Trocknen","Vorspuelen","Reinigen"],"status":"RUNNING"}]
+END   1508497321.201590949
+
+START 1508497322.207258568
+[{"command":null,"currentStage":0,"elapsed":1,"id":4,"name":"OP_kurz_v22b","remaining":2072,"signature":1535303334,"stages":["Spuelen","Therm Desinfection","Trocknen","Vorspuelen","Reinigen"],"status":"RUNNING"}]
+END   1508497322.273419684
+
+START 1508497323.280636777
+[{"command":null,"currentStage":null,"elapsed":1,"id":4,"name":"OP_kurz_v22b","remaining":2072,"signature":1535303334,"stages":["Spuelen","Therm Desinfection","Trocknen","Vorspuelen","Reinigen"],"status":"CANCELLING"}]
+END   1508497323.327270710
+
+START 1508497324.334914589
+[{"command":null,"currentStage":null,"elapsed":1,"id":4,"name":"OP_kurz_v22b","remaining":2072,"signature":1535303334,"stages":["Spuelen","Therm Desinfection","Trocknen","Vorspuelen","Reinigen"],"status":"CANCELLING"}]
+END   1508497324.372587733
+
+START 1508497325.375049753
+[{"command":null,"currentStage":null,"elapsed":1,"id":4,"name":"OP_kurz_v22b","remaining":0,"signature":1535303334,"stages":["Spuelen","Therm Desinfection","Trocknen","Vorspuelen","Reinigen"],"status":"READY"}]
+END   1508497325.395232878

@@ -1,0 +1,3 @@
+START 1508511755.714495471
+{"A0":0,"A0Setpoint":0,"batchNumber":$BATCH_ID,"data":"PIA\n","disinfectionOk":true,"disinfectionTime":null,"errorId":null,"finishedStatus":"SUCCESS","hasDetailedLog":true,"id":$BATCH_ID,"needFeedback":false,"processingStatus":"DONE","programId":6,"programName":"FUtest","programNr":0,"rackId":"","sessionId":99,"sieves":[],"started":"2017-10-20T14:48:59","stopped":"2017-10-20T14:55:21","userName":"Administrator"}
+END   1508511758.165042675
