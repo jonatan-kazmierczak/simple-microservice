@@ -13,7 +13,7 @@ public class Config {
 
 
     public Config(String[] startArgs) {
-        this.port = getValue(startArgs, 0, 3000);
+        this.port = getValue(startArgs, 0, 8000);
         this.programId = getValue(startArgs, 1, 3);
         this.programIdStr = String.valueOf(programId);
         this.pauseSeconds = getValue(startArgs, 2, 0);

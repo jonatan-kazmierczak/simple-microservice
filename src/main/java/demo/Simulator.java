@@ -63,16 +63,11 @@ public class Simulator {
 
         httpServer.createContext("/", e -> handleRequest(e, RequestType.GENERIC));
 
-        // Note: triples of below recordings must have the same length at the end
-        httpServer.createContext("/api/console/sensors", e -> handleRequest(e, RequestType.PROGRAM));
-        httpServer.createContext("/api/programs/current", e -> handleRequest(e, RequestType.PROGRAM));
-        httpServer.createContext("/api/status", e -> handleRequest(e, RequestType.STATUS));
-
         httpServer.createContext("/api/maintenance/info", e -> handleRequest(e, RequestType.MAINTENANCE_INFO));
         httpServer.createContext("/api/batches", e -> handleRequest(e, RequestType.BATCHES));
-        httpServer.createContext("/api/batches/detailedlog/", e -> handleRequest(e, RequestType.DETAILED_LOG));
 
-        httpServer.setExecutor( Executors.newWorkStealingPool() );
+        // TODO problem: single thread by default
+        //httpServer.setExecutor( Executors.newWorkStealingPool() );
         startTime = System.currentTimeMillis();
         httpServer.start();
         log("HttpServer STARTED on port %d", config.port);
@@ -84,16 +79,19 @@ public class Simulator {
         URI requestURI = exchange.getRequestURI();
         log("Request original:     '%s'", requestURI);
         URI pathURI = createPathURI(requestURI, requestType);
-        log("Request transformed:  '%s'", pathURI);
+        //log("Request transformed:  '%s'", pathURI);
         List<ApiResponse> responses = apiResponses.get(pathURI);
 
+        // TODO problem: big chunk of memmory temporarily allocated
+        Object myUselessTable = new byte[ 1_000_000 ];
         try ( PrintStream bodyPS = new PrintStream(
                 exchange.getResponseBody(), false, StandardCharsets.UTF_8.toString() ) ) {
             if (responses != null) {
                 int elapsedTimeAsIdx = getElapsedTimeAsIdx();
                 int responseIdx = elapsedTimeAsIdx % responses.size();
                 ApiResponse response = responses.get(responseIdx);
-                //Thread.sleep( response.getDuration() ); // currently disabled
+                // TODO problem: sleep in the code
+                Thread.sleep( response.getDuration() );
                 exchange.getResponseHeaders().add("Content-Type", "application/json; charset=utf-8");
                 exchange.sendResponseHeaders(STATUS_OK, 0);
 
@@ -138,7 +136,7 @@ public class Simulator {
                 log("unknown endpoint: '%s' %n", pathURI);
                 exchange.sendResponseHeaders(STATUS_NOT_FOUND, 0);
             }
-        } catch (IOException e) {
+        } catch ( IOException | InterruptedException e) {
             log(e);
             throw new RuntimeException(e);
         }
