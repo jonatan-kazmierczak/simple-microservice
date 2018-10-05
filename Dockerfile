@@ -6,6 +6,8 @@ ADD ./build/libs/simple-microservice.jar .
 ADD ./api-responses ./api-responses
 RUN mkdir logs
 
+ENV LANG en_US.UTF-8
+
 EXPOSE 80
 
 # Start app with JFR listening on port 80
