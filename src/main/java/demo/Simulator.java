@@ -54,7 +54,6 @@ public class Simulator {
     public Simulator(Map<URI, List<ApiResponse>> apiResponses, Config config) throws IOException {
         this.config = config;
         this.apiResponses = apiResponses;
-        //Arrays.fill( batchLengths, 1 );
 
         log( config );
         HttpServer httpServer = HttpServer.create(
@@ -67,7 +66,7 @@ public class Simulator {
         httpServer.createContext("/api/batches", e -> handleRequest(e, RequestType.BATCHES));
 
         // TODO problem: single thread by default
-        //httpServer.setExecutor( Executors.newWorkStealingPool() );
+        httpServer.setExecutor( Executors.newCachedThreadPool() );
         startTime = System.currentTimeMillis();
         httpServer.start();
         log("HttpServer STARTED on port %d", config.port);
@@ -83,7 +82,7 @@ public class Simulator {
         List<ApiResponse> responses = apiResponses.get(pathURI);
 
         // TODO problem: big chunk of memmory temporarily allocated
-        Object myUselessTable = new byte[ 1_000_000 ];
+        //Object myUselessTable = new byte[ 1_000_000 ];
         try ( PrintStream bodyPS = new PrintStream(
                 exchange.getResponseBody(), false, StandardCharsets.UTF_8.toString() ) ) {
             if (responses != null) {
@@ -91,7 +90,7 @@ public class Simulator {
                 int responseIdx = elapsedTimeAsIdx % responses.size();
                 ApiResponse response = responses.get(responseIdx);
                 // TODO problem: sleep in the code
-                Thread.sleep( response.getDuration() );
+                //Thread.sleep( response.getDuration() );
                 exchange.getResponseHeaders().add("Content-Type", "application/json; charset=utf-8");
                 exchange.sendResponseHeaders(STATUS_OK, 0);
 
@@ -136,7 +135,7 @@ public class Simulator {
                 log("unknown endpoint: '%s' %n", pathURI);
                 exchange.sendResponseHeaders(STATUS_NOT_FOUND, 0);
             }
-        } catch ( IOException | InterruptedException e) {
+        } catch ( IOException e) {
             log(e);
             throw new RuntimeException(e);
         }
