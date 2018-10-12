@@ -14,4 +14,5 @@ EXPOSE 80
 CMD [ "java", \
     "-XX:+FlightRecorder", \
     "-XX:StartFlightRecording=disk=true,maxage=1d,filename=./logs/sm.jfr,dumponexit=true", \
-    "-Xmx6m", "-jar", "simple-microservice.jar", "80" ]
+    "-XX:MaxRAMFraction=1", \
+    "-jar", "simple-microservice.jar", "80" ]
