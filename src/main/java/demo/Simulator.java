@@ -54,7 +54,6 @@ public class Simulator {
     public Simulator(Map<URI, List<ApiResponse>> apiResponses, Config config) throws IOException {
         this.config = config;
         this.apiResponses = apiResponses;
-        //Arrays.fill( batchLengths, 1 );
 
         log( config );
         HttpServer httpServer = HttpServer.create(
