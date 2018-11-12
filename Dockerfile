@@ -13,5 +13,5 @@ EXPOSE 80
 # Start app with JFR listening on port 80
 CMD [ "java", \
     "-XX:+FlightRecorder", \
-    "-XX:StartFlightRecording=disk=true,maxage=1d,filename=./logs/sm.jfr,dumponexit=true", \
+    "-XX:StartFlightRecording=disk=true,filename=./logs/sm.jfr,dumponexit=true,maxage=1d", \
     "-Xmx4m", "-jar", "simple-microservice.jar", "80" ]
